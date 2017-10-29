@@ -20,8 +20,8 @@ STREAMLINK esl_dota2                _= with just the url or twitch channel name 
 STREAMLINK twitch.tv/esl_dota2 720p _= with url or twitch channel name + quality launches video player directly._   
   
 Can also Drag & Drop stream url to these batch scripts:  
-`streamlink\streamlink.bat`     _=  Streamlink quality dialog hidecmd launcher._   
-`streamlink\streamlinkchat.bat` _=  Streamlink quality dialog hidecmd launcher + chat in a browser tab._  
+`streamlink\streamlink.bat`     _=  Streamlink url + stream dialogs hidecmd launcher._   
+`streamlink\streamlinkchat.bat` _=  Streamlink url + stream dialogs hidecmd launcher + chat in a browser tab._  
   
 #### PLUGIN USAGE:   
 Get _'Open With'_ plugin for firefox - https://addons.mozilla.org/en-US/firefox/addon/open-with/  
