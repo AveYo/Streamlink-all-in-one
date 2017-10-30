@@ -2,7 +2,6 @@
 The included MPC-HC video player uses pass-trough and gpu hw acceleration with low resources usage  
 Use Middle DblClick to reload stream in MPC-HC if any issues, Left DblClick to switch Fullscreen   
 Refactored to hide the command window at launch, show gui dialogs for URL and STREAM as needed  
-Detects options like --help or --twitch-oauth-authenticate in url input-dialog and shows cmd window    
 
 ![Preview](streamlink_preview.png)  
 
@@ -14,9 +13,11 @@ Create new batch scripts for your favourite Twitch streams by simply making a co
   
 #### COMMAND-LINE USAGE  
 After first launch, `streamlink\streamlink.bat` can be called from any path or [Win+R] run menu:  
-STREAMLINK                                             _= with no parameters shows stream name input-dialog_   
-STREAMLINK dreamleague  _= with just the url or twitch channel name shows quality choice-dialog_    
-STREAMLINK twitch.tv/dreamleague 720p _= with both url + quality launches video player directly_   
+~ `streamlink`                             = with no arguments shows url input-dialog  
+~ `streamlink dreamleague`                 = with just the url or twitch channel name shows stream choice-dialog   
+~ `streamlink dreamleague 720p`            = with both url and stream choice launches video player directly  
+~ `streamlink dreamleague+chat`            = with +chat added to the url also opens twitch chat in browser tab   
+~ `streamlink --twitch-oauth-authenticate` = with any python options shows cmd window  
   
 #### PLUGIN USAGE:   
 Get _'Open With'_ plugin for firefox - https://addons.mozilla.org/en-US/firefox/addon/open-with/  
