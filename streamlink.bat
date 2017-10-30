@@ -1,9 +1,9 @@
 goto="Streamlink.Init" /* 
 ::     url input + stream choice dialogs and hidecmd launcher v7 final
 :: Save as Streamlink.bat in Streamlink folder, can be called using [Win+R] Run-menu after first launch
-:: streamlink                          = with no parameters shows url input-dialog 
-:: streamlink esl_dota2                = with just the url or twitch channel name shows stream choice-dialog  
-:: streamlink twitch.tv/esl_dota2 720p = with both url or twitch channel name and stream launches video player directly 
+:: streamlink                            = with no parameters shows url input-dialog 
+:: streamlink dreamleague                = with just the url or twitch channel name shows stream choice-dialog  
+:: streamlink twitch.tv/dreamleague 720p = with both url and stream choice launches video player directly 
 :: Detects options like --help or --twitch-oauth-authenticate in url input-dialog and shows cmd window   
 :"Streamlink.Batch"
 rem set "TWITCH_OAUTH_TOKEN=--twitch-oauth-token YourTwitchOauthToken" 
@@ -12,8 +12,8 @@ set "DEFAULT=--default-stream "720p,480p,best""
 set "RTMPDUMP=--rtmp-rtmpdump rtmpdump\rtmpdump.exe"
 set "PYTHONIOENCODING=cp65001" & chcp 65001 >NUL
 set "STREAMLINK=python\python.exe streamlink-script.py %FFMPEG% %RTMPDUMP% %CONFIG%"
-set "URL=%1"
-set "STREAM=%2"
+set "URL=%~1"
+set "STREAM=%~2"
 if not defined URL echo  Input empty, insert url & call :input "STREAMLINK: Insert url" "OK" URL
 if not defined URL echo  [X] Input empty & timeout /t 4 & exit/b
 if /i "%URL:~0,2%"=="--" echo  Input contains options & call :showcmd cmd /k %STREAMLINK% %DEFAULT% %URL% & exit/b
