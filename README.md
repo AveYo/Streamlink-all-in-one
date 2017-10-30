@@ -2,7 +2,7 @@
 The included MPC-HC video player uses pass-trough and hw acceleration onto your gpu with low resources usage  
 Use Middle DblClick to reload stream in MPC-HC if any issues, Left DblClick to switch Fullscreen   
 Refactored to hide the command window at launch, show gui dialogs for URL and STREAM as needed  
-Detects options like --twitch-oauth-authenticate in url input-dialog and pass it as-is    
+Detects options like --help or --twitch-oauth-authenticate in url input-dialog and shows cmd window
   
 ![Preview](streamlink_preview.png)  
   
