@@ -10,7 +10,8 @@ Added `streamlink\Setup_Open_With_Firefox_and_Chrome_Addon.bat` with detailed in
 Unzip & run `dreamleague.bat` or `dreamleague+chat.bat`  
 ~ __a dialog will ask to select stream quality__  
 ~ video will play in MPC-HC (included), Twitch chat will start in a browser tab (only for +chat variant)  
-Create new batch scripts for your favourite Twitch streams by simply making a copy of an example batch file then rename it to the twitch stream name i.e. `dreamleague.bat` to `moonducktv.bat`  
+Create new batch scripts for your favourite Twitch streams by simply making a copy of an example batch file  
+then rename it to the twitch stream name i.e. `dreamleague.bat` to `moonducktv.bat`  
   
 #### COMMAND-LINE USAGE  
 After first launch, `streamlink\streamlink.bat` can be called from any path or [Win+R] run menu:  
@@ -18,7 +19,7 @@ After first launch, `streamlink\streamlink.bat` can be called from any path or [
 ~ `streamlink dreamleague`                 = with just the url or twitch channel name shows stream choice-dialog  
 ~ `streamlink dreamleague 720p`  = with both url and stream choice launches video player directly 
 ~ `streamlink dreamleague+chat`            = with +chat added to the url also opens twitch chat in browser tab  
-~ `streamlink --twitch-oauth-authenticate` = with any python options shows cmd window
+~ `streamlink --twitch-oauth-authenticate` = with any python options shows cmd window  
   
 #### PLUGIN USAGE:   
 1: Run `streamlink\Setup_Open_With_Firefox_and_Chrome_Addon.bat`  
