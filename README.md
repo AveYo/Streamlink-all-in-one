@@ -15,11 +15,11 @@ then rename it to the twitch stream name i.e. `dreamleague.bat` to `moonducktv.b
   
 #### COMMAND-LINE USAGE  
 After first launch, `streamlink\streamlink.bat` can be called from any path or [Win+R] run menu:  
-~ `streamlink`                             = with no arguments shows url input-dialog 
-~ `streamlink dreamleague`                 = with just the url or twitch channel name shows stream choice-dialog  
-~ `streamlink dreamleague 720p`  = with both url and stream choice launches video player directly 
-~ `streamlink dreamleague+chat`            = with +chat added to the url also opens twitch chat in browser tab  
-~ `streamlink --twitch-oauth-authenticate` = with any python options shows cmd window  
+~ `streamlink`                             = with no arguments shows url input-dialog   
+~ `streamlink dreamleague`                 = with just the url or twitch channel name shows stream choice-dialog   
+~ `streamlink dreamleague 720p`  = with both url and stream choice launches video player directly  
+~ `streamlink dreamleague+chat`            = with +chat added to the url also opens twitch chat in browser tab    
+~ `streamlink --twitch-oauth-authenticate` = with any python options shows cmd window   
   
 #### PLUGIN USAGE:   
 1: Run `streamlink\Setup_Open_With_Firefox_and_Chrome_Addon.bat`  
