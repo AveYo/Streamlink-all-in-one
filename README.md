@@ -1,8 +1,9 @@
-#### Streamlink all-in-one package for Windows v9  
+#### Streamlink all-in-one package for Windows v9f  
 The included MPC-HC video player uses pass-trough and gpu hw acceleration with low resources usage  
 Use Middle DblClick to reload stream in MPC-HC if any issues, Left DblClick to switch Fullscreen   
 Refactored to hide the command window at launch, show gui dialogs for URL and STREAM as needed  
 Added `streamlink\Setup_Open_With_Firefox_and_Chrome_Addon.bat` with detailed instructions  
+Updated MPC-HC and Streamlink binaries [2018.06.24]
 
 [Dialogs preview](https://github.com/AveYo/Streamlink-all-in-one/blob/master/streamlink_preview.png?raw=true)
   
